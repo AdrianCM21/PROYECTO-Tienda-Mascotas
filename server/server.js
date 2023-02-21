@@ -7,7 +7,7 @@ require('./config/Mongodb.config');
 app.use(cors()) // This is new
 app.use(express.json()); // This is new
 app.use(express.urlencoded({ extended: true }));
-require('./routes/Votacion.routes')(app);
+require('./routes/Mascotas.routes')(app);
 
 app.listen(8000,()=>{
     console.log('Conectado exitosa mente')

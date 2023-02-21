@@ -13,9 +13,9 @@ code {
 }
 /* ----------------------------------------------- */
 /* encavezado */
-.h1-title{
+.title-principal{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   color: #000;
 }
 
@@ -28,7 +28,11 @@ code {
 .btn-principal{
   display: flex;
   width: 95%;
-  justify-content: flex-end
+  justify-content: space-between;
+
+}
+.title-principal{
+  font-size: 4em;
 }
 
 .contenido{
@@ -89,6 +93,8 @@ code {
   display: flex;
   width: 1100px;
   flex-direction: row;
+  border: 2px solid #000;
+  justify-content: space-around;
 }
 
 .titulocontainer{
@@ -99,4 +105,15 @@ code {
 .option{
   width: 40%;
   padding: 30px;
+}
+.btns{
+  display: flex;
+  flex-direction: column;
+}
+.container-conte{
+  width: 90%;
+  display: flex;
+  border: 2px solid #000;
+  justify-content: space-evenly;
+  align-items: center;
 }

@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/Layout";
-import AgregarProducto from "../page/voto/AgregarEncuesta";
 import Home from "../page/Home";
-import Encuestas from "../page/voto/Encuestas";
-import Resultado from "../page/voto/Resultado";
+import AgregarMascota from "../page/mascota/AgregarMascota";
+import DetalleMascota from "../page/mascota/DetalleMascota";
+import ActualizarMascota from "../page/mascota/ActualizarMascota";
 
 export default createBrowserRouter([{
     path:'/',
@@ -15,14 +15,14 @@ export default createBrowserRouter([{
         }
         ,{
             path:'/agregar',
-            element:<AgregarProducto/>
+            element:<AgregarMascota/>
         }
         ,{
-            path:'/votacion/:id',
-            element:<Encuestas/>
+            path:'/detalles/:id',
+            element:<DetalleMascota/>
         },{
-            path:'/resultado/:id',
-            element:<Resultado/>
+            path:'/actulizar/:id',
+            element:<ActualizarMascota/>
         }
     ]
 }])

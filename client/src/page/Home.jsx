@@ -1,5 +1,5 @@
 import React from 'react'
-import PantallaPrincipal from './voto/PantallaPrincipal'
+import PantallaPrincipal from './mascota/PantallaPrincipal'
 
 const Home = () => {
   return (
