@@ -8,7 +8,7 @@ const DetalleMascota = () => {
 
   useEffect(() => {
     const Obtener = async()=>{
-        const respuesta = await axios.get(`${process.env.REACT_APP_API_URL}/api/mascota/${id}`);
+        const respuesta = await axios.get(`${process.env.REACT_APP_API_URL}mascota/${id}`);
         setDetalle(respuesta.data);
     }
     Obtener();
@@ -32,9 +32,9 @@ const DetalleMascota = () => {
         </div>
         <div className="container-conte ">
             <div>
-              <p className='m-4 fw-bold'>Pet tipe : </p>
-              <p className='m-4 fw-bold'>Pet description:</p>
-              <p className='m-4 fw-bold'>Pet skils:</p>
+              <p className='m-4 fw-bold'>Tipo de mascota: </p>
+              <p className='m-4 fw-bold'>Descricion de la mascota:</p>
+              <p className='m-4 fw-bold'>habilidades:</p>
             </div>
             <div>
               <p className='m-4'>{detalle.tipo}</p>
